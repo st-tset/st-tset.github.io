@@ -1,0 +1,78 @@
+body{
+font-family: "Liberation Serif", serif;
+background-color: #1a1b1b;
+color: #c5c6c6
+}
+
+.main-text{
+width: 640px;
+margin: 0em auto;
+text-align: center;
+border: solid;
+border-width: 1px;
+padding: 0em 1em;
+}
+
+.subtitle{
+margin-bottom: 1em;
+font-style: italic;
+}
+
+p:first-of-type:first-letter{
+float: left;
+font-size: 5em;
+padding: 0.1em;
+}
+
+p:first-of-type{
+text-indent: 0em;
+}
+
+p:last-child{
+margin-bottom: 1em;
+}
+
+p{
+margin: 0em auto;
+text-indent: 3em;
+text-align: justify;
+}
+
+.ascii-art{
+margin:1em auto;
+display: inline-block;
+line-height: 1;
+white-space: pre;
+border: solid;
+border-width: 1px;
+}
+
+.ascii-table{
+font-family: "Liberation Mono", monospace;
+margin:1em auto;
+display: inline-block;
+white-space: pre;
+}
+
+img{
+width: 70%;
+display: block;
+margin: 1em auto;
+}
+
+footer{
+text-decoration: none;
+margin-top: 1em;
+}
+
+@media (max-width:641px) {
+	.main-text{
+		width: auto;
+	}
+	.ascii-art{
+		font-size: small;
+	}
+	.ascii-table{
+		font-size: small;
+	}
+}
