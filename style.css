@@ -60,8 +60,11 @@ display: block;
 margin: 1em auto;
 }
 
-footer{
+a{
 text-decoration: none;
+}
+
+footer{
 margin-top: 1em;
 }
 
