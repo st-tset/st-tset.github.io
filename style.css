@@ -1,5 +1,5 @@
 body{
-font-family: "Liberation Serif", serif;
+font-family: "Liberation Serif", "Roboto Serif", serif;
 background-color: #1a1b1b;
 color: #c5c6c6
 }
@@ -48,7 +48,7 @@ border-width: 1px;
 }
 
 .ascii-table{
-font-family: "Liberation Mono", monospace;
+font-family: "Liberation Mono", "Roboto Mono", monospace;
 margin:1em auto;
 display: inline-block;
 white-space: pre;
