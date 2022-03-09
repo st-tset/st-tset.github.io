@@ -70,7 +70,7 @@ margin-top: 1em;
 }
 
 .emoji{
-font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
+font-family: emoji;
 }
 
 @media (max-width:641px) {
