@@ -61,7 +61,7 @@ margin: 1em auto;
 }
 
 a{
-text-decoration: none;
+text-decoration: none !important;
 }
 
 footer{
