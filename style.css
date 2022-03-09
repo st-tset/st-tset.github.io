@@ -1,10 +1,10 @@
 body{
-font-family: "Liberation Serif", "Roboto Serif", serif;
 background-color: #1a1b1b;
 color: #c5c6c6
 }
 
 .main-text{
+font-family: "Liberation Serif", serif;
 width: 640px;
 margin: 0em auto;
 text-align: center;
@@ -48,7 +48,7 @@ border-width: 1px;
 }
 
 .ascii-table{
-font-family: "Liberation Mono", "Roboto Mono", mono, monospace;
+font-family: "Liberation Mono", monospace;
 margin:1em auto;
 display: inline-block;
 white-space: pre;
@@ -70,7 +70,7 @@ margin-top: 1em;
 }
 
 .emoji{
-font-family: "Twemoji Mozilla", emoji;
+font-family: emoji;
 }
 
 @media (max-width:641px) {
