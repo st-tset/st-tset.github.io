@@ -41,6 +41,7 @@ background-color: gray;
 }
 
 .navbar button{
+text-align: center;
 display:inline-block;
 transition-duration: 0.4s;
 overflow: hidden;
