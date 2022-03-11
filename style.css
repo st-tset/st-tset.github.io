@@ -60,6 +60,10 @@ display: block;
 margin: 1em auto;
 }
 
+a:hover.emoji{
+text-decoration: none !important;
+}
+
 a:link{ 
 text-decoration: none; 
 color: dodgerblue;
