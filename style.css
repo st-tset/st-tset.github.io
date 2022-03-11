@@ -60,10 +60,6 @@ display: block;
 margin: 1em auto;
 }
 
-a:hover.emoji{
-text-decoration: none !important;
-}
-
 a:link{ 
 text-decoration: none; 
 color: dodgerblue;
@@ -73,12 +69,8 @@ a:hover{
 text-decoration: underline; 
 }
 
-a:active{
-text-decoration: underline; 
-}
-
 a:visited{
-text-decoration: none !important;
+text-decoration: none;
 color: lightcoral;
 }
 
