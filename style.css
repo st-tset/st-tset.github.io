@@ -28,7 +28,6 @@ padding: 0em 0em 0em 1em;
 }
 
 .navbar{
-display: flex;
 width: 686px;
 margin: 0em auto;
 background-color: dimgray;
@@ -42,16 +41,17 @@ background-color: gray;
 }
 
 .navbar button{
+display:inline-block;
+transition-duration: 0.4s;
 overflow: hidden;
 font-family: inherit;
 font-size: inherit;
+border: none;
 color: black;
 background-color: dimgray;
-border: none;
 margin: 0em 0 em;
 width: 50px;
 }
-
 
 .main-text{
 width: 640px;
