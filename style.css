@@ -28,11 +28,17 @@ padding: 0em 0em 0em 1em;
 }
 
 .navbar{
-	display: flex;
-overflow: hidden;
+display: flex;
 width: 686px;
 margin: 0em auto;
 background-color: dimgray;
+}
+
+.navbar button:hover{
+background-color: gray;
+}
+.navbar button:active{
+background-color: gray;
 }
 
 .navbar button{
@@ -45,12 +51,6 @@ margin: 0em 0 em;
 width: 50px;
 }
 
-.navbar button:hover{
-background-color: gray;
-}
-.navbar button:active{
-background-color: gray;
-}
 
 .main-text{
 width: 640px;
