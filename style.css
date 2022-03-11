@@ -1,16 +1,98 @@
 body{
+font-family: "Liberation Serif", serif;
 background-color: #1a1b1b;
 color: #c5c6c6
 }
 
-.main-text{
-font-family: "Liberation Serif", serif;
-width: 640px;
+img{
+border: solid;
+border-color: gray;
+border-width: 2px;
+width: 70%;
+display: block;
+margin: 1em auto;
+}
+
+footer{
+margin-top: 1em;
+}
+
+hr{
+border: none;
+height: 1px;
+background-color: #c5c6c6;
+}
+
+ol{
+padding: 0em 0em 0em 1em;
+}
+
+.navbar{
+	display: flex;
+overflow: hidden;
+width: 686px;
 margin: 0em auto;
+background-color: dimgray;
+}
+
+.navbar button{
+font-family: inherit;
+font-size: inherit;
+color: black;
+background-color: dimgray;
+border: none;
+margin: 0em 0 em;
+width: 50px;
+}
+
+.navbar button:hover{
+background-color: gray;
+}
+.navbar button:active{
+background-color: gray;
+}
+
+.main-text{
+width: 640px;
+margin: 1em auto;
 text-align: center;
 border: solid;
 border-width: 3px;
-padding: 0em 1em;
+padding: 0em 20px;
+}
+
+.main-text p:first-of-type:first-letter{
+float: left;
+font-size: 5em;
+padding: 0.1em;
+}
+  
+.main-text p:first-of-type{
+text-indent: 0em;
+}
+
+.main-text p:last-child{
+margin-bottom: 1em;
+}
+
+.main-text p{
+margin: 0em auto;
+text-indent: 3em;
+text-align: justify;
+}
+
+.main-text a:link{ 
+text-decoration: none; 
+color: dodgerblue;
+}
+
+.main-text a:hover{ 
+text-decoration: underline; 
+}
+
+.main-text a:visited{
+text-decoration: none;
+color: lightcoral;
 }
 
 .subtitle{
@@ -18,24 +100,10 @@ margin-bottom: 1em;
 font-style: italic;
 }
 
-p:first-of-type:first-letter{
-float: left;
-font-size: 5em;
-padding: 0.1em;
-}
-
-p:first-of-type{
-text-indent: 0em;
-}
-
-p:last-child{
-margin-bottom: 1em;
-}
-
-p{
-margin: 0em auto;
-text-indent: 3em;
+.footnotes{
 text-align: justify;
+font-size: small;
+margin-bottom: 1em;
 }
 
 .ascii-art{
@@ -56,61 +124,28 @@ display: inline-block;
 white-space: pre;
 }
 
-img{
-border: solid;
-border-color: gray;
-border-width: 2px;
-width: 70%;
-display: block;
-margin: 1em auto;
-}
-
-a:link{ 
-text-decoration: none; 
-color: dodgerblue;
-}
-
-a:hover{ 
-text-decoration: underline; 
-}
-
-a:visited{
-text-decoration: none;
-color: lightcoral;
-}
-
-footer{
-margin-top: 1em;
-}
-
 .emoji{
 font-family: emoji;
 }
 
-.footnotes{
-text-align: justify;
-font-size: small;
-margin-bottom: 1em;
-}
-
-hr{
-border: none;
-height: 1px;
-background-color: #c5c6c6;
-}
-
-ol{
-padding: 0em 0em 0em 1em;
-}
-
-@media (max-width:641px) {
+@media (max-width:786px) {
 	.main-text{
 		width: auto;
 	}
-	.ascii-art{
-		font-size: small;
+	.navbar{
+		width: auto;
 	}
+	.navbar button{
+		width: auto;
+	}
+
 	.ascii-table{
 		font-size: small;
+	}
+}
+
+@media (max-width:320px) {
+	.ascii-art{
+		font-size: xx-small;
 	}
 }
