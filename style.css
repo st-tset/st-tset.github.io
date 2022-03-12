@@ -1,3 +1,7 @@
+:root{
+--bodyw: 640px;
+}
+
 body{
 font-family: "Liberation Serif", serif;
 background-color: #1a1b1b;
@@ -28,7 +32,7 @@ padding: 0em 0em 0em 16px;
 }
 
 .home{
-width: 640px;
+width: var(--bodyw);
 margin: 16px auto;
 text-align: center;
 border: solid;
@@ -38,7 +42,7 @@ padding: 0em 16px;
 
 .navbar{
 display: flex;
-width: 686px;
+width: 678px;
 margin: 0px auto;
 background-color: dimgray;
 }
@@ -63,7 +67,7 @@ margin: 0px 0px;
 }
 
 .main-text{
-width: 640px;
+width: var(--bodyw);
 margin: 16px auto;
 text-align: center;
 border: solid;
@@ -132,16 +136,13 @@ font-family: emoji;
 }
 
 @media (max-width:786px) {
-	.home{
-		width: auto;
+	:root{
+		--bodyw: auto;
 	}
-	.main-text{
-		width: auto;
+	.navbar{
+		width: var(--bodyw);
 	}
 	.ascii-art{
 		font-size: 2vw;
-	}
-	.navbar{
-		width: auto;
 	}
 }
