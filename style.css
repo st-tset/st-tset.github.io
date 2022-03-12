@@ -1,148 +1,168 @@
-:root{
---bodyw: 640px;
-}
-
+/* Variables */
 body{
-font-family: "Liberation Serif", serif;
-background-color: #1a1b1b;
-color: #c5c6c6
+  --body-width: 640px;
 }
 
-img{
-border: solid;
-border-color: gray;
-border-width: 2px;
-width: 70%;
-display: block;
-margin: 16px auto;
-}
-
-footer{
-margin-top: 16px;
-}
-
-hr{
-border: none;
-height: 1px;
-background-color: #c5c6c6;
-}
-
-ol{
-padding: 0em 0em 0em 16px;
-}
-
-.home{
-width: var(--bodyw);
-margin: 16px auto;
-text-align: center;
-border: solid;
-border-width: 3px;
-padding: 0em 16px;
-}
-
-.navbar{
-display: flex;
-width: 678px;
-margin: 0px auto;
-background-color: dimgray;
-}
-
-.navbar button:hover{
-background-color: gray;
-}
-.navbar button:active{
-background-color: gray;
-}
-
-.navbar button{
-display:inline-block;
-transition-duration: 0.4s;
-overflow: hidden;
-font-family: inherit;
-font-size: inherit;
-border: none;
-color: black;
-background-color: dimgray;
-margin: 0px 0px;
-}
-
-.main-text{
-width: var(--bodyw);
-margin: 16px auto;
-text-align: center;
-border: solid;
-border-width: 3px;
-padding: 0em 20px;
-}
-
-.main-text p:first-of-type:first-letter{
-float: left;
-font-size: 80px;
-padding: 8px;
+/* HTML */
+html{
+  background-color: #1a1b1b;
 }
   
-.main-text p:first-of-type{
-text-indent: 0px;
+/* Body */
+body{
+  font-family: "Liberation Serif", serif;
+  background-color: #1a1b1b;
+  color: #c5c6c6;
+
+  width: var(--body-width);
+  margin: 16px auto;
 }
 
-.main-text p:last-child{
-margin-bottom: 16px;
+/* Home */
+.home{
+  text-align: center; 
+
+  border: solid;
+  border-width: 3px;
+  padding: 0em 20px;
 }
 
-.main-text p{
-margin: 0px auto;
-text-indent: 48px;
-text-align: justify;
+.home a:link{ 
+  text-decoration: none; 
+  color: #62a0ea;
+}
+  
+.home a:hover{ 
+  text-decoration: underline; 
+}
+  
+.home a:visited{
+  text-decoration: none;
+  color: lightcoral;
+}
+/* Navbar */
+.navbar{
+  overflow: hidden;
+  background-color: dimgray;
+  overflow: wrap;
 }
 
-.main-text a:link{ 
-text-decoration: none; 
-color: dodgerblue;
-}
+.navbar a{
+  float: left;
+  display: block;
+  color: black;
+  background-color: dimgray;
+  text-align: center;
+  padding: 2px 4px;
 
-.main-text a:hover{ 
-text-decoration: underline; 
+  transition-duration: 0.4s;
 }
+.navbar a.clicked{background-color: gray;}
+.navbar a.right{float: right;}
+.navbar a:hover{background-color: gray;}
+.navbar a:active{background-color: gray;}
 
-.main-text a:visited{
-text-decoration: none;
-color: lightcoral;
-}
-
+/* Subtitles */
 .subtitle{
-margin-bottom: 16px;
-font-style: italic;
+  font-style: italic;
 }
 
+/* Post */
+.post{
+  text-align: center;
+  border: solid;
+  border-width: 3px;
+  padding: 0em 20px;
+  margin-bottom: 16px;
+}
+  
+.post p:first-of-type:first-letter{
+  float: left;
+  font-size: 80px;
+  padding: 8px;
+}
+    
+.post p:first-of-type{
+  text-indent: 0px;
+}
+  
+.post p:last-child{
+  margin-bottom: 16px;
+}
+  
+.post p{
+  margin: 0px auto;
+  text-indent: 48px;
+  text-align: justify;
+}
+
+.post a:link{ 
+  text-decoration: none; 
+  color: #62a0ea;
+}
+  
+.post a:hover{ 
+  text-decoration: underline; 
+}
+  
+.post a:visited{
+  text-decoration: none;
+  color: lightcoral;
+}
+  
+/* Images */
+img{
+  border: solid;
+  border-color: gray;
+  border-width: 2px;
+  width: 70%;
+  display: block;
+  margin: 16px auto;
+}
+  
+/* Horizontal bar */
+hr{
+  border: none;
+  height: 1px;
+  background-color: #c5c6c6;
+}
+
+/* Ordered list */
+ol{
+  padding-left: 16px;
+}
+  
+/* Footnotes */
 .footnotes{
-text-align: justify;
-font-size: small;
-margin-bottom: 16px;
+  text-align: justify;
+  font-size: small;
+  margin-bottom: 16px;
 }
-
+  
+/* ASCII art */
 .ascii-art{
-padding: 2px 0px;
-border: solid;
-border-color: gray;
-border-width: 2px;
-margin:16px auto;
-display: inline-block;
-line-height: 1;
-white-space: pre;
+  padding: 2px 0px;
+  border: solid;
+  border-color: gray;
+  border-width: 2px;
+  margin:16px auto;
+  display: inline-block;
+  line-height: 1;
+  white-space: pre;
 }
-
+  
+/* Emojies */
 .emoji{
-font-family: emoji;
+  font-family: emoji;
 }
-
+  
+/* Responsive */
 @media (max-width:786px) {
-	:root{
-		--bodyw: auto;
-	}
-	.navbar{
-		width: var(--bodyw);
-	}
-	.ascii-art{
-		font-size: 2vw;
-	}
+  body{
+    --body-width: auto;
+    margin: 16px;
+  }
+  .ascii-art{
+    font-size: 2vw;
+  }
 }
