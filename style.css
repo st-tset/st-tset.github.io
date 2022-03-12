@@ -116,6 +116,15 @@ font-size: small;
 margin-bottom: 1em;
 }
 
+.ascii-art-home{
+font-family: "Liberation Mono", monospace;
+font-size: 0.4vw;
+margin:1em auto;
+display: inline-block;
+line-height: 1;
+white-space: pre;
+}
+
 .ascii-art{
 padding: 0.1em 0em;
 border: solid;
@@ -150,5 +159,14 @@ font-family: emoji;
 	}
 	.ascii-table{
 		font-size: small;
+	}
+	.ascii-art{
+		font-size: x-small;
+	}
+}
+
+@media (max-width:320px) {
+	.ascii-art{
+		font-size: xx-small;
 	}
 }
