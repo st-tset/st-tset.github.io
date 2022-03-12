@@ -28,7 +28,7 @@ body{
 }
 
 .home a:link{ 
-  text-decoration: none; 
+  text-decoration: none !important; 
   color: #62a0ea;
 }
   
