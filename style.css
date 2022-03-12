@@ -151,13 +151,4 @@ font-family: emoji;
 	.ascii-table{
 		font-size: small;
 	}
-	.ascii-art{
-		font-size: x-small;
-	}
-}
-
-@media (max-width:320px) {
-	.ascii-art{
-		font-size: xx-small;
-	}
 }
