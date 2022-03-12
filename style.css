@@ -8,7 +8,7 @@ img{
 border: solid;
 border-color: gray;
 border-width: 2px;
-width: 60%;
+width: 70%;
 display: block;
 margin: 16px auto;
 }
@@ -143,4 +143,5 @@ font-family: emoji;
 	}
 	.navbar{
 		width: auto;
+	}
 }
